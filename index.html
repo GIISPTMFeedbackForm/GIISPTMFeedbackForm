@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parent Feedback Form</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+      padding: 30px;
+    }
+  .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .image-link-container {
+            position: absolute;
+            text-align: center;
+            width: 310px;
+        }
+
+        .left-image {
+            top: 20px;
+            left: 0;
+        }
+
+        .right-image {
+            top: 20px;
+            right: 0;
+        }
+
+        .image-link-container img {
+            width: 310px;
+            height: 174px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .image-link-container span {
+            display: block;
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .image-link-container span:hover {
+            color: #0056b3;
+        }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 25px;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .rating-options {
+      margin-top: 10px;
+    }
+
+    .rating-options input {
+      margin-right: 8px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+        <!-- Left image -->
+        <div class="image-link-container left-image">
+            <a href="https://globalindianschool.org/pune/balewadi/" target="_blank" rel="noopener noreferrer">
+                <img src="C:\Users\Students\Downloads\logo.png" alt="Left image">
+                <span>Click here to open</span>
+            </a>
+        </div>
+
+        <!-- Right image -->
+        <div class="image-link-container right-image">
+            <a href="https://www.facebook.com/GIIS.Balewadi/" target="_blank" rel="noopener noreferrer">
+                <img src="C:\Users\Students\Downloads\Facebook-Logosu.png" alt="Facebook logo">
+                <span>Click here to open</span>
+            </a>
+        </div>
+
+ 
+
+  <h2>Parent Feedback Form</h2>
+
+  <form action="C:\Users\Students\Documents\rajni\final.html" method="POST">
+    
+    <label for="parentName">Parent's Name:</label>
+    <input type="text" id="parentName" name="parentName" required>
+
+    <label for="childName">Child's Name:</label>
+    <input type="text" id="childName" name="childName" required>
+
+    <label for="class">Class / Grade:</label>
+    <select id="class" name="class" required>
+      <option value="">-- Select Class --</option>
+      <option value="1">Class 1</option>
+      <option value="2">Class 2</option>
+      <option value="3">Class 3</option>
+      <option value="4">Class 4</option>
+      <option value="5">Class 5</option>
+   <option value="6">Class 6</option>
+   <option value="7">Class 7</option>
+<option value="8">Class 8</option>
+<option value="9">Class 9</option>
+<option value="10">Class 10</option>
+<option value="11">Class 11</option>
+
+
+   
+
+
+      
+    </select>
+
+    <label>How satisfied are you with your child's progress?</label>
+    <div class="rating-options">
+<label for="excellent">Excellent</label>
+      <input type="radio" id="excellent" name="satisfaction" value="Excellent" required>
+ <br>
+<label for="good">Good</label>
+      <input type="radio" id="good" name="satisfaction" value="Good">
+      <br>
+<label for="average">Average</label>
+      <input type="radio" id="average" name="satisfaction" value="Average">
+      <br>
+ <label for="poor">Poor</label>
+      <input type="radio" id="poor" name="satisfaction" value="Poor">
+     <br>
+    </div>
+
+    <label for="comments">Any additional comments or suggestions:</label>
+    <textarea id="comments" name="comments" rows="5" placeholder="Write your feedback here..."></textarea>
+
+  <input type="submit" value="Submit">
+
+    <p class="note">Note: This form is for demonstration purposes only and does not store or send your data.</p>
+
+  </form>
+
+</body>
+</html>
